@@ -22,7 +22,7 @@ module Logan
     def initialize h
       super
 
-      unless app_url.nil? || app_url.blank?
+      unless app_url.nil? || app_url.empty? || !/[^[[:space:]]]/.match(app_url)
         @project_id ||= app_url[/projects\/(\d*)\//, 1].to_i
       end
 
