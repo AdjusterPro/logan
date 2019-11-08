@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.8.7'
 
   s.add_runtime_dependency 'httparty', '>= 0.11.0'
-  s.add_runtime_dependency 'json', '~> 1.8'
+  s.add_runtime_dependency 'json', '~> 2.1'
 
   s.add_development_dependency 'yard', '~> 0.8'
   s.add_development_dependency 'redcarpet', '2.3.0'
